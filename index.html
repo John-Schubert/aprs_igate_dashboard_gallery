@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APRS iGate Dashboard — Screenshot Gallery</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="page-title">APRS iGate Dashboard — Screenshot Gallery</h1>
+    <p class="subtitle">A two-way amateur radio APRS internet gateway (W5UFV-1) on a Raspberry Pi Zero 2 W, with its web dashboard. Newest screenshots first; click any image for full size.</p>
+    <p class="doc-links">How it works: <a href="https://github.com/John-Schubert/aprs_igate_dashboard_gallery#readme">Project README: hardware, message return path, dashboard pages</a></p>
+  </header>
+
+  <main id="timeline" aria-live="polite"></main>
+
+  <footer class="site-footer">
+    <p>Mirrors screenshots from a home station's dashboard. Source images only — no live data here.</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+  </div>
+
+  <script src="assets/gallery.js" defer></script>
+</body>
+</html>

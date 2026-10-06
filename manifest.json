@@ -1,0 +1,34 @@
+{
+  "title": "APRS iGate Dashboard \u2014 Screenshot Gallery",
+  "views": [
+    {
+      "key": "messages",
+      "label": "Messages: heard on RF and sent to RF"
+    },
+    {
+      "key": "dashboard",
+      "label": "Dashboard: packets, signal, station map"
+    },
+    {
+      "key": "live_feed",
+      "label": "Live feed of decoded packets"
+    },
+    {
+      "key": "system_stats",
+      "label": "Pi Zero system health"
+    }
+  ],
+  "entries": [
+    {
+      "date": "2026-10-06",
+      "folder": "2026-10-06",
+      "images": {
+        "messages": "messages.png",
+        "dashboard": "dashboard.png",
+        "live_feed": "live_feed.png",
+        "system_stats": "system_stats.png"
+      },
+      "note": "First snapshot, taken the evening the iGate became two-way. The Messages page is new: it shows a handheld's message to the UTC time service heard on RF, then the ACK and the reply arriving from the internet and being transmitted back to the handheld, then the handheld's own ACK. Before the transmit side was added, those replies never reached the radio."
+    }
+  ]
+}
