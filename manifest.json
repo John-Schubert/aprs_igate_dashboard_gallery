@@ -6,6 +6,10 @@
       "label": "Messages: heard on RF and sent to RF"
     },
     {
+      "key": "satellites",
+      "label": "Satellite passes: next 48 hours, ISS marked for APRS"
+    },
+    {
       "key": "dashboard",
       "label": "Dashboard: packets, signal, station map"
     },
@@ -29,6 +33,18 @@
         "system_stats": "system_stats.png"
       },
       "note": "First snapshot, taken the evening the iGate became two-way. The Messages page is new: it shows a handheld's message to the UTC time service heard on RF, then the ACK and the reply arriving from the internet and being transmitted back to the handheld, then the handheld's own ACK. Before the transmit side was added, those replies never reached the radio."
+    },
+    {
+      "date": "2026-10-07",
+      "folder": "2026-10-07",
+      "images": {
+        "messages": "messages.png",
+        "satellites": "satellites.png",
+        "dashboard": "dashboard.png",
+        "live_feed": "live_feed.png",
+        "system_stats": "system_stats.png"
+      },
+      "note": "Second day. The SDR was found to be tuned 252 kHz low (rtl_fm prints its tuning offset, which had been mistaken for the frequency) and was moved to 144.390 MHz at 5 PM; it went from missing most packets from a station half a mile away to decoding every one. New Satellites page with 48 hours of pass predictions computed in the browser from AMSAT elements, checked against an independent orbit library. All pages now show local time, and the beacon symbol changed to mark a transmit-capable iGate."
     }
   ]
 }

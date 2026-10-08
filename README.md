@@ -36,6 +36,11 @@ files that cron jobs regenerate every minute:
   time, direction (heard on RF, or sent to RF from the internet), from, to
   and text. Dire Wolf's own log does not record messages, so a small Python
   collector reads the service journal and keeps its own history.
+- **Satellites:** the next 48 hours of passes over the station for five
+  amateur satellites, with rise time, duration, peak height and path across
+  the sky. The iGate downloads orbital elements from AMSAT; the page does
+  the orbit maths in the browser. ISS passes are marked, since the ISS
+  carries an APRS digipeater.
 - **Dashboard:** packets per hour, signal level over time, a Leaflet map of
   heard positions, and a table of the stations heard most.
 - **Live feed:** each packet decoded today.
@@ -46,7 +51,10 @@ files that cron jobs regenerate every minute:
 Built and maintained with Claude Code working over SSH from a second
 Raspberry Pi: diagnosing a three-week receive outage down to a USB
 re-enumeration, adding the restart rule, bringing up the transmit side, and
-writing the Messages page and its collector. Changes on the iGate are backed
+writing the Messages and Satellites pages. A side-by-side test with the
+UV-5R as a second receiver showed the SDR had been tuned 252 kHz low for
+months: `rtl_fm` prints its internal tuning offset at start-up, and that
+number had been mistaken for the listening frequency. Changes on the iGate are backed
 up first, and the first on-air transmission was done with the operator
 present.
 
