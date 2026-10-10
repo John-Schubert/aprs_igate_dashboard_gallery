@@ -41,6 +41,13 @@ files that cron jobs regenerate every minute:
   the sky. The iGate downloads orbital elements from AMSAT; the page does
   the orbit maths in the browser. ISS passes are marked, since the ISS
   carries an APRS digipeater.
+- **FT8 map:** contacts from the station's WSJT-X log on 20 m, drawn on a
+  map centred on the station so that direction and distance read true, with
+  line weight showing how well each station heard it. The table below lists
+  every contact and links each callsign to its QRZ page. A Python script
+  builds the page from ADIF logs; a small standard-library receiver on the
+  iGate takes a new log from the browser or from the network drive and
+  rebuilds the page.
 - **Dashboard:** packets per hour, signal level over time, a Leaflet map of
   heard positions, and a table of the stations heard most.
 - **Live feed:** each packet decoded today.

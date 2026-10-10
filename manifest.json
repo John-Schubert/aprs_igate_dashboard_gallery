@@ -2,6 +2,10 @@
   "title": "APRS iGate Dashboard \u2014 Screenshot Gallery",
   "views": [
     {
+      "key": "ft8_map",
+      "label": "FT8 map: 20 m contacts drawn from the station, with the log table"
+    },
+    {
       "key": "messages",
       "label": "Messages: heard on RF and sent to RF"
     },
@@ -45,6 +49,19 @@
         "system_stats": "system_stats.png"
       },
       "note": "Second day. The SDR was found to be tuned 252 kHz low (rtl_fm prints its tuning offset, which had been mistaken for the frequency) and was moved to 144.390 MHz at 5 PM; it went from missing most packets from a station half a mile away to decoding every one. New Satellites page with 48 hours of pass predictions computed in the browser from AMSAT elements, checked against an independent orbit library. All pages now show local time, and the beacon symbol changed to mark a transmit-capable iGate."
+    },
+    {
+      "date": "2026-10-10",
+      "folder": "2026-10-10",
+      "images": {
+        "ft8_map": "ft8_map.png",
+        "messages": "messages.png",
+        "satellites": "satellites.png",
+        "dashboard": "dashboard.png",
+        "live_feed": "live_feed.png",
+        "system_stats": "system_stats.png"
+      },
+      "note": "New FT8 Map page, linked from every page's navigation: 78 contacts with 62 stations on 20 m, drawn on a map centred on the station, with a contact table whose callsigns link to QRZ. A new log can be uploaded from the browser or pulled from the network drive, and the page rebuilds itself. Every page also links to the station's weather dashboard. Also since the last snapshot: the start script now restarts the whole receive pipeline when either program exits (a transmit at high power had left the service running with nothing decoding), and the System Stats CPU figure no longer measures the cron jobs that run at the top of each minute (it read 73% and now reads 20%)."
     }
   ]
 }
